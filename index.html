@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>OneDay Page</title>
+</head>
+<body>
+
+  <!-- // ----Navbar----// -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="menu">
+      <a href="#" class="menu-item">ABOUT US</a>
+      <a href="#" class="menu-item">PRODUCT</a>
+      <a href="#" class="menu-item">BLOG</a>
+      <a href="#" class="menu-item">CONTACT</a>
+      <a href="#" class="menu-item"><i class="fas fa-ellipsis-h"></i></a>
+    </div>
+  </div>
+
+  <!-- // ----Mobile form----// -->
+
+  <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+
+  <!-- // ----Contenu----// -->
+
+  <div class="content">
+    <h1 style="text-align: center;" class="animate__animated animate__fadeInDown">This  is  OneDay.</h1>
+    <p class="animate__animated animate__fadeInUp">Subtext is used to give detailed information</p>
+    <p style="padding-left: 12px;" class="animate__animated animate__fadeInUp">about you, your service or whatever else.</p>
+    <button class="animate__animated animate__fadeIn" onclick="showPopup()">TELL ME MORE.</button>
+  </div>
+
+
+  <!-- // ----POPUP----// -->
+
+  <div class="popup animate__animated animate__zoomIn" id="popup">
+    <div class="popup-content">
+      <i class="fas fa-bell"></i> <!-- Icône de cloche (bell) -->
+      <p>Merci d'avoir cliqué</p>
+      <button onclick="closePopup()"><i class="fas fa-times"></i></button> <!-- Icône de fermeture (times) -->
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

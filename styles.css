@@ -1,0 +1,149 @@
+body {
+  background-color: #5da7af;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  
+  padding-left: 100px;
+  font-size: 1.5rem;
+  width: 155px;
+  margin-right: 10px;
+}
+
+.menu-item {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  color: #FFD700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh; /* Cela assure que la section occupe 100% de la hauteur de la fenêtre */
+  text-align: center;
+  padding: 20px;
+}
+
+h1.less-bold {
+  font-weight: 600;
+}
+
+p {
+  margin-top: -10px;
+}
+
+button {
+  margin: 20px auto; /* Au lieu de margin-left et margin-top */
+  background-color: white;
+  color: black;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFD700;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup i {
+  color:black;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  top: 114px;
+  /* background-color: #FFD700; */
+  color: #000000;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+  position: absolute;
+  right: 4px;
+
+}
+
+.popup button i {
+  font-size: 1rem;
+}
+
+
+
+/* Ajoutez du style pour le bouton du menu mobile */
+.mobile-menu-btn {
+  display: none; /* Masquez le bouton par défaut sur les écrans non mobiles */
+  cursor: pointer;
+  font-size: 1.5rem; /* Ajustez la taille selon vos préférences */
+  color: white;
+  margin-left: auto; /* Placez le bouton mobile à droite */
+}
+
+/* Media query pour les écrans de taille maximale de 768px (mobile) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Ajustez la direction pour afficher le bouton et le logo sur la même ligne */
+    justify-content: space-between; /* Espacement entre le bouton et le logo */
+    align-items: center;
+  }
+
+  .logo-img {
+    margin-right: 10px; /* Ajustez la marge à droite du logo si nécessaire */
+  }
+
+  .menu {
+    display: none; /* Masquez le menu par défaut sur les écrans mobiles */
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+  }
+
+  .menu-item {
+    margin: 10px 0;
+  }
+
+  .mobile-menu-btn {
+    display: block; /* Affichez le bouton sur les écrans mobiles */
+  }
+}
+
